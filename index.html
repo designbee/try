@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Programming | Midterm Project</title>	
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<meta charset="utf-8" /> 
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/validator.js"></script> 
+</head>
+<body> 
+	<header>
+		<div class="container">
+			<h1> Reshma Mathew | <span> Web Developer </span></h1>		
+			<nav>		
+				<ul class="navbar">
+					<li>
+						<a href="#home" class="link-btn mnuitem active" onclick="show(this)">HOME</a>
+					</li>
+					<li>
+						<a href="#portfolio" class="link-btn mnuitem" onclick="show(this)">Portfolio</a>
+					</li>
+					<li>
+						<a href="#blog" class="link-btn mnuitem" onclick="show(this)">Blog</a>
+					</li>
+					<li>
+						<a href="#about" class="link-btn mnuitem" onclick="show(this)">ABOUT ME</a>
+					</li>
+					
+					<li>
+						<a href="#contact" class="link-btn mnuitem" onclick="show(this)">CONTACT</a>
+					</li>
+				</ul>		
+			</nav>
+		</div>
+	</header>
+
+	<section>
+		<article class="home-content content" id="home"> <!-- content for home -->
+			<div class="container">				
+                <div class="box_wrapper">
+	                <div id="img_wrapper">
+	                	<img src="img/me.jpg" alt="My Pic" />
+	                </div>
+	                <div id="box1">
+	                	<h2> About </h2>
+	                	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	                	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	                	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	                	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	                	</p>
+	                	<a href="#about" class="link-btn-inverse right" onclick="show(this)">ABOUT</a>
+	                </div>
+                </div>
+
+                <div class="box" id="box2">
+                	<h2> Portfolio </h2>
+                	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                	<a href="#portfolio" class="link-btn-inverse" onclick="show(this)">PORTFOLIO</a>
+                </div>
+                <div class="box" id="box3">
+                	<h2> Blog </h2>
+                	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                	<a href="#blog" class="link-btn-inverse" onclick="show(this)">BLOG</a>
+                </div>
+                <div class="box" id="box4">
+                	<h2> Contact </h2>
+                	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                	<a href="#contact" class="link-btn-inverse" onclick="show(this)">CONTACT</a>
+                </div>
+			</div>
+		</article>
+		<article class="portfolio-content content" id="portfolio">  <!-- content for portfolio -->
+			<div class="container">
+				<h2>MY PORTFOLIO</h2>
+				<!-- img credits to http://www.julienrenvoye.com/ -->
+				<div id="slider"></div>
+				<div id="navDots">
+					<div class="circle" id="circle1" onclick="displaySlide(this)"></div>
+					<div class="circle" id="circle2" onclick="displaySlide(this)"></div>
+					<div class="circle" id="circle3" onclick="displaySlide(this)"></div>
+					<div class="circle" id="circle4" onclick="displaySlide(this)"></div>
+					<div class="circle" id="circle5" onclick="displaySlide(this)"></div>
+				</div>
+				<script type="text/javascript" src="js/slider.js"></script> 
+			</div>
+		</article>
+		<article class="blog-content content" id="blog">
+			<div class="container">
+				<ul id="blogs">
+					<script type="text/javascript">
+						displayBlog();		// displaying blog through array
+					</script>
+				</ul>
+			</div>
+		</article>
+		<article class="about-content content" id="about">		<!-- content for About page -->
+			<div class="container">
+					<h2>About Me</h2>
+
+					<p> 
+						I'm <span>Reshma Mathew</span>. I'm a post graduate in computer applications. During my work experience I came across web designing and dound it very interesting. I'm looking forward to web development as a serious career. I have some basic skills like HTML, CSS and Javascript. I've joined Humber with the intention to learn and understand web development standards used internationally. Also, I look forward to learning every phase of development of a website i.e., from design to coding to integration to a database.
+					</p>
+					<p>
+						Talking about myself, I'm a very <span>optimistic</span> person and I stand by my faith in God. I like to hang around with friends and meet up with my cousins once in a while. I love to enjoy my food, <span>seafood</span> and <span>chicken</span> cooked in Indian style with spices are my favourite. My favorite pass time for the past few months has been browsing about various web designing topics on the internet.
+					</p>
+					<h3>Skills..</h3>
+					<div class="skills">
+						<h4>What I Know...</h4>
+						<ol>
+							<li>HTML</li>
+							<li>CSS (including CSS3 and some CSS frameworks)</li>
+							<li>Javascript</li>
+							<li>jQuery</li>
+							<li>Java</li>
+							<li>SQL</li>						
+						</ol>
+					</div>
+					<div class="skills">
+						<h4>What I want to know...</h4>
+						<ol>
+							<li>Some js libraries(node, backbone)</li>
+							<li><span>Android development</span></li>
+							<li>IOS development</li>
+							<li><span>CMS</span></li>
+							<li>Server-side programming (php,asp.net...)</li>
+						</ol>
+					</div>				
+				<hr />
+			</div>
+		</article>			
+		<article class="contact-content content" id="contact">  <!-- content for contact page -->
+			<div class="container">
+				<div id="form_wrapper"> 
+					<form method="post">
+						<input type="text" placeholder="Enter Name" id="txtName" maxlength="50" /> <span id="error0"></span>
+						<br/>
+						<input type="text" placeholder="Enter Email Id" id="txtEmail" maxlength="50" /> <span id="error1"></span>
+						 <br/>
+						<input type="text" placeholder="Enter Phone No." id="txtNum"> <span id="error2"></span> 
+						<br />
+						<input type="text" placeholder="Enter Address" id="txtAddress" maxlength="50" /> <span id="error3"></span>
+						<br/>
+						<input type="text" placeholder="Enter Postal Code" id="txtPostal" /> <span id="error4"></span>
+						<br/>
+						<textarea cols="21" rows="8" id="txtMessage" placeholder="Enter Message"></textarea> <span id="error5"></span> <br/>
+						<input type="button" value="Submit" class="link-btn-inverse" id="btnSubmit" onclick="validate()" />
+					</form>
+					<div id="success_msg" class="right">
+						<span>WRITE <br/> TO <br/> ME</span>
+					</div>	
+				</div>
+
+			</div>
+		</article>
+	</section>	
+	<footer>
+		<div class="container">
+			<div id="footContact">
+
+				<p>Contact: </p> 				
+				<p><a href="mailto:abc@mail.com"> abc@gmail.com </a> </p> 
+				<a href="#"> <img src="img/rss.png" alt="RSS"></a> 
+				<a href="#"> <img src="img/twitter.png" alt="Twitter"></a>
+				<a href="#"> <img src="img/fb.png" alt="Facebook"></a>
+			</div>
+			<div id="details" class="right">
+				<p > &copy; 2013</p>
+			<p> <a href="img/w3c.png" target="blank" title="W3C validator screenshot">W3C|HTML5</a></p>
+			<p>
+			    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+			        <img style="border:0;width:88px;height:31px"
+			            src="img/vcss.gif"
+			            alt="Valid CSS!" />
+			    </a>
+			</p>
+			</div>
+			
+		</div>
+	</footer>
+</body>
+</html>
